@@ -1,0 +1,362 @@
+```pdf
+%PDF-1.5
+%
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/ProcSet [/PDF /Text]
+/Font <<
+/F1 <<
+/Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica
+/Encoding /MacRomanEncoding
+>>
+/F2 <<
+/Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Helvetica-Bold
+/Encoding /MacRomanEncoding
+>>
+>>
+>>
+>>
+endobj
+4 0 obj
+<<
+/Length 5 0 R
+>>
+stream
+BT
+/F1 12 Tf
+20 750 Td
+(Jyothsna Suggula) Tj
+ET
+BT
+/F1 10 Tf
+20 730 Td
+(Bangalore | suggulajyothsna2507@gmail.com | 8328588682 | linkedin/jyothsna-suggula | github/sjyothsna25) Tj
+ET
+BT
+/F2 12 Tf
+20 700 Td
+(Summary) Tj
+ET
+BT
+/F1 12 Tf
+20 680 Td
+(Data Scientist with 2 years of experience in developing and deploying NLP and LLM-based models using Python.) Tj
+ET
+BT
+/F1 12 Tf
+20 665 Td
+(Proficient in developing scalable AI/ML solutions on Azure, with expertise in SQL and data modeling. Strong) Tj
+ET
+BT
+/F1 12 Tf
+20 650 Td
+(analytical abilities, translating business challenges into effective technical solutions. Exhibited leadership in team) Tj
+ET
+BT
+/F1 12 Tf
+20 635 Td
+(management and mentoring, driving high performance managing client interactions across two business domains.) Tj
+ET
+BT
+/F2 12 Tf
+20 605 Td
+(Experience) Tj
+ET
+BT
+/F2 12 Tf
+20 585 Td
+(Data Scientist, Genpact – Bangalore) Tj
+/F1 12 Tf
+400 585 Td
+(Aug 2023 – Present) Tj
+ET
+BT
+/F1 12 Tf
+20 565 Td
+(Project 1: Engineered and deployed an automated reconciliation solution for unstructured claim documents for a global) Tj
+ET
+BT
+/F1 12 Tf
+20 550 Td
+(FMCG company) Tj
+ET
+BT
+/F1 12 Tf
+30 530 Td
+((cid:1) Processed 15,000 claims from Top 24 customers covering 50% of claims volume, while handling 30+ templates with) Tj
+ET
+BT
+/F1 12 Tf
+30 515 Td
+(varying layouts) Tj
+ET
+BT
+/F1 12 Tf
+30 495 Td
+((cid:1) Built an automated claims reconciliation pipeline using Azure Blob Storage for ingestion, Azure Document Intelligence for) Tj
+ET
+BT
+/F1 12 Tf
+30 480 Td
+(extraction, OpenAI (GPT-4o) for structuring, and Azure SQL Database for data storage; leveraged GPT-4o, Fuzzy Matching,) Tj
+ET
+BT
+/F1 12 Tf
+30 465 Td
+(TF-IDF, and rule-based reconciliation logic to match claimed items to invoices and evaluate claim validity) Tj
+ET
+BT
+/F1 12 Tf
+30 445 Td
+((cid:1) Achieved 88% accuracy in claim acceptance/rejection with explainable rationale, enabling 7 FTE savings and boosting) Tj
+ET
+BT
+/F1 12 Tf
+30 430 Td
+(efficiency by automating validation and detecting duplicate claims) Tj
+ET
+BT
+/F1 12 Tf
+20 410 Td
+(Project 2: Developed a machine learning-driven Price Pack Architecture (PPA) tool for a leading CPG giant, designed) Tj
+ET
+BT
+/F1 12 Tf
+20 395 Td
+(predict the impact of price and pack size changes on market dynamics) Tj
+ET
+BT
+/F1 12 Tf
+30 375 Td
+((cid:1) Managed and analyzed 3 segments of Nielsen and eCommerce data across 25+ markets, with 10M+ records per segment) Tj
+ET
+BT
+/F1 12 Tf
+30 360 Td
+(spanning 4 years) Tj
+ET
+BT
+/F1 12 Tf
+30 340 Td
+((cid:1) Created an end-to-end, Azure-based pricing analytics pipeline leveraging Python and PySpark, integrating advanced) Tj
+ET
+BT
+/F1 12 Tf
+30 325 Td
+(models such as LMMs, RandomForest, LinearRegression, and XGBoost; incorporated elasticity modeling and seasonality) Tj
+ET
+BT
+/F1 12 Tf
+30 310 Td
+(indexing, and built an interactive UI/UX to simulate future market scenarios) Tj
+ET
+BT
+/F1 12 Tf
+30 290 Td
+((cid:1) Delivered 86% accuracy in forecasting product behavior, enabling simulation of 1,000+ price-pack combinations across) Tj
+ET
+BT
+/F1 12 Tf
+30 275 Td
+(6,000+ SKUs and multiple channels; provided a scalable, insight-driven solution for optimized pricing and packaging) Tj
+ET
+BT
+/F1 12 Tf
+30 260 Td
+(decisions) Tj
+ET
+BT
+/F2 12 Tf
+20 230 Td
+(Internship, Genpact – Bangalore) Tj
+/F1 12 Tf
+400 230 Td
+(Mar 2023 – Jul 2023) Tj
+ET
+BT
+/F1 12 Tf
+20 210 Td
+(MVP1: Digitized Policy Data Entry) Tj
+ET
+BT
+/F1 12 Tf
+30 190 Td
+((cid:1) Engineered a Generative AI-powered solution leveraging OpenAI (GPT-3.5) and Azure to digitize policy data by extracting) Tj
+ET
+BT
+/F1 12 Tf
+30 175 Td
+(and structuring information into a standardized format; crafted a Streamlit-based interface for smooth user engagement) Tj
+ET
+BT
+/F1 12 Tf
+20 155 Td
+(MVP2: Contract Summarization System) Tj
+ET
+BT
+/F1 12 Tf
+30 135 Td
+((cid:1) Pioneered an AI-driven contract analysis platform on Azure using LLMs to extract key takeaways, summarize sections, and) Tj
+ET
+BT
+/F1 12 Tf
+30 120 Td
+(capture condition-specific data with section titles and page references; integrated a Streamlit UI for effective navigation) Tj
+ET
+BT
+/F2 12 Tf
+20 90 Td
+(Achievements) Tj
+ET
+BT
+/F1 12 Tf
+20 70 Td
+(Overall Performer Award 2023 Recognized for making a significant impact within the organization) Tj
+ET
+BT
+/F1 12 Tf
+20 50 Td
+(YoDA Master Award Recognized for outstanding project delivery, contributing to 2 ongoing client engagements) Tj
+ET
+BT
+/F1 12 Tf
+20 30 Td
+(Won Code for Good Hackathon 2022 Led and contributed to an innovative sustainability solution for an NGO, streamlining) Tj
+ET
+BT
+/F1 12 Tf
+20 15 Td
+(operations and maximizing community impact at JPMorgan Chase & Co.’s event) Tj
+ET
+BT
+/F2 12 Tf
+20 750 Td
+(Education) Tj
+ET
+BT
+/F2 12 Tf
+20 730 Td
+(SASTRA Deemed to be University, Thanjavur) Tj
+/F1 12 Tf
+350 730 Td
+(Jul 2019 – Apr 2023) Tj
+ET
+BT
+/F1 12 Tf
+20 710 Td
+(B.Tech. in Computer Science, CGPA: 8.8) Tj
+ET
+BT
+/F2 12 Tf
+20 690 Td
+(Narayana Junior College, Hyderabad) Tj
+/F1 12 Tf
+350 690 Td
+(Jun 2017 – Jun 2019) Tj
+ET
+BT
+/F1 12 Tf
+20 670 Td
+(Senior Secondary, Percentage: 96.6%) Tj
+ET
+BT
+/F2 12 Tf
+20 640 Td
+(Technologies) Tj
+ET
+BT
+/F2 12 Tf
+20 620 Td
+(Skills:) Tj
+/F1 12 Tf
+70 620 Td
+(Python, PySpark, SQL, Machine Learning, Generative AI, Large Language Models (LLMs), Prompt Engineering,) Tj
+ET
+BT
+/F1 12 Tf
+20 605 Td
+(Retrieval-Augmented Generation (RAG), Agentic AI, Langchain, Data Preprocessing, Exploratory Data Analysis (EDA), Feature) Tj
+ET
+BT
+/F1 12 Tf
+20 590 Td
+(Engineering, Natural Language Processing (NLP), Text Analytics, Sentiment Analysis, PowerBI, Microsoft Azure, Google Cloud) Tj
+ET
+BT
+/F1 12 Tf
+20 575 Td
+(Platform (GCP), Azure OpenAI, Git, Jupyter Notebook, Streamlit) Tj
+ET
+BT
+/F2 12 Tf
+20 545 Td
+(Summary) Tj
+ET
+BT
+/F1 12 Tf
+20 525 Td
+(Data Scientist with 2 years of experience in developing and deploying NLP and LLM-based models using Python.) Tj
+ET
+BT
+/F1 12 Tf
+20 510 Td
+(Proficient in developing scalable AI/ML solutions on Azure, with expertise in SQL and data modeling. Strong) Tj
+ET
+BT
+/F1 12 Tf
+20 495 Td
+(analytical abilities, translating business challenges into effective technical solutions. Experienced in coding, designing and) Tj
+ET
+BT
+/F1 12 Tf
+20 480 Td
+(ensuring best practices in Data Science. ) Tj
+ET
+T*
+ET
+endstream
+5 0 obj
+1895
+endobj
+xref
+0 6
+0000000000 65535 f
+0000000009 00000 n
+0000000051 00000 n
+0000000096 00000 n
+0000000229 00000 n
+0000002130 00000 n
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+2218
+%%EOF
+```
+/resumes/Data Scientist.pdf

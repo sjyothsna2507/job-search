@@ -1,0 +1,108 @@
+job_links_task:
+  description: >
+    **Task**: Fetch Latest Job Postings
+
+    **Description**: 
+    Use the input variables— {job_title}, {location}, {skills}, {experience_level}, and {job_type}—to query job boards and APIs. Filter results to only include postings published within the last 1 month.
+
+    **Parameters**:
+    - `job_title`: Desired role name
+    - `location`: Geographic area or remote
+    - `skills`: Required key skills
+    - `experience_level`
+    - `job_type`: e.g., “Full‑time”, “Contract”
+
+    **Note**: Aim for a breadth of sources (e.g., LinkedIn API, Indeed RSS) to maximize coverage.
+
+  expected_output: >
+    A list of job postings from the last 1 month that match the criteria, with the following structure:
+  
+    - `job_title`
+    - `job_description`
+    - `job_link`
+    - `location`
+    - `skills`
+    - `experience_level`
+    - `job_type`
+    - `posting_timestamp`
+
+  agent: job_sourcing_agent
+
+company_contacts_task:
+  description: >
+    **Task**: Enrich Jobs with Company Details & Contacts
+
+    **Description**: 
+    For each job URL from `job_links_task`, retrieve the company profile (size, industry, location, website). Then extract up to five talent‑acquisition or HR email addresses from public sources (LinkedIn, company site, professional directories).
+
+    **Parameters**:
+    - `job_urls`: List of job posting URLs
+
+    **Note**: Validate each email format and de‑duplicate across sources.
+
+  expected_output: >
+    A mapping of each company to its profile plus a list of five verified HR/talent‑acquisition email addresses, with the following structure:
+
+    - `company_size`
+    - `website`
+    - `industry`
+    - `hr_emails`: [email1, email2, email3, email4, email5]
+
+  agent: company_research_agent
+
+resume_tailoring_task:
+  description: >
+    **Task**: Tailor and Optimize Resume
+
+    **Description**: 
+    Take the candidate’s base resume and the job descriptions (job_description) from `job_links_task`. Update the Summary and Skills sections with keywords and phrases from the job requirements. Ensure the document is ATS‑friendly and flows naturally. Save the final file(s) to `/resumes/{job_title}.pdf`.
+
+    **Parameters**:
+    - `base_resume`: Path or content of the candidate’s original resume
+    - `job_descriptions`: Text of each job posting
+
+    **Note**: Use standard PDF or DOCX formatting; confirm file name conventions.
+
+  expected_output: >
+    Paths to the tailored resume file(s) stored under the `/resumes` folder, with the following structure:
+    - `resume_path`: `/resumes/{job_title}.pdf`
+  output_file: matters.pdf
+  agent: resume_tailoring_agent
+
+email_draft_task:
+  description: >
+    **Task**: Generate Personalized Outreach Email Drafts
+
+    **Description**: 
+    For each company and its corresponding job application:
+    1. Address up to five HR recipients by name or title.
+    2. Express interest in the specific job position (`job_title`).
+    3. Highlight 2–3 relevant skills that match the job description.
+    4. Mention one insight about the company to demonstrate research and personalization.
+    5. Reference the tailored resume located at `/resumes/{job_title}.pdf`.
+
+    Instead of sending the emails, compile all the drafts into a single Excel file. Each row in the Excel file should contain the following columns:
+ 
+    - `job_title`
+    - `job_description`
+    - `job_link`
+    - `location`
+    - `skills`
+    - `experience_level`
+    - `job_type`
+    - `posting_timestamp`
+    - `company_size`
+    - `website`
+    - `industry`
+    - `hr_emails`: [email1, email2, email3, email4, email5]
+    - `resume_path`: `/resumes/{job_title}.pdf`
+    - `recipients`: [email1, email2, email3, email4, email5]
+    - `subject`: Email subject line
+    - `body`: Email body text
+    - `attachment`: Path to the tailored resume file
+
+  expected_output: >
+    A structured Excel file where each row represents a complete email draft for a specific company, with all relevant fields populated.
+
+  agent: email_drafting_agent
+  output_file: email_drafts.xlsx
